@@ -1,0 +1,22 @@
++----------------+          +-----------------+          +---------------+
+|     Carro      |          |     Modelo      |          |     Marca     |
++----------------+          +-----------------+          +---------------+
+| - placa: string | <------> | - nome: string  |          | - nome: string|
+| - cor: string  |          | - marca: Marca  | <------> | - modelos: [] |
+| - ano: int     |          +-----------------+          +---------------+
+| - combustivel: string   |
+| - num_portas: int       |
+| - quilometragem: float  |
+| - RENAVAM: string      |
+| - chassi: string       |
+| - valor_locacao: float |
++-----------------------+
+
++-------------------+          +----------------+
+|      Cliente      |          |   Locação      |
++-------------------+          +----------------+
+| - nome: string    |          | - data_locacao: datetime|
+| - cpf: string     | <------> | - data_devolucao: datetime |
+| - endereco: string|          | - carro: Carro  |
+| - telefone: string|          | - cliente: Cliente|
++-------------------+          +------------------+
